@@ -1,3 +1,4 @@
+/*global $*/
 //Class 1:
         // Fork and clone the repo and set up your project workspace and link files
         // Write HTML for your project
@@ -19,12 +20,41 @@
 //****************** SERIOUSLY TEST USING console.log()!!! ******************
 
 //GLOBAL VARIABLES
+var userChoice="";
+console.log()
 
+var computerChoice="";
+console.log()
 
+var winner="";
+console.log()
+
+var choice=["Rock","Paper","Scissors"];
+console.log()
 
 //FUNCTIONS
+
+$("#shoot").append(function()
+
+ $(".me").
+
+)
+
+
 
 
 
 // DOCUMENT READY FUNCTION
 
+$( userChoice ).ready(function() {
+  
+});
+$( computerChoice ).ready(function() {
+  
+});
+$( winner ).ready(function() {
+  
+});
+$( choice ).ready(function() {
+  
+});
