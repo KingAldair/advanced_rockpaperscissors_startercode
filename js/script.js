@@ -86,8 +86,8 @@ $("#shoot").click(function(){
     
     
     
-    if(userChoice===computerChoice){
-        alert("No winer");
+    if ((userChoice === "rock") && (computerChoice === choice[0])){
+        alert("No Winer");
         console.log;
     }
     else if ((userChoice === "rock") && (computerChoice === choice[1])){
@@ -98,26 +98,26 @@ $("#shoot").click(function(){
         alert("You lost");
         console.log;
     }
-    
-    
-    else if ((userChoice === "scissors") && (computerChoice === choice[0])){
-        alert("You lost");
-        console.log;
-    }
-    else if ((userChoice === "scissors") && (computerChoice === choice[1])){
-        alert("You win");
-        console.log;
-    }
-
-    
-    
     else if((userChoice === "paper") && (computerChoice === choice[0])){
         alert("You win");
         console.log;
     }
-    
-    else if((userChoice === "paper") && (computerChoice === choice[2])){
+    else if ((userChoice === "paper") && (computerChoice === choice[2])){
+        alert("No Winer");
+        console.log;
+    }
+    else if((userChoice === "paper") && (computerChoice === choice[1])){
         alert("You lost");
+        console.log;
+    }else if ((userChoice === "scissors") && (computerChoice === choice[0])){
+        alert("You lost");
+        console.log;
+    }else if ((userChoice === "scissors") && (computerChoice === choice[2])){
+        alert("You win");
+        console.log;
+    }
+    else if ((userChoice === "scissors") && (computerChoice === choice[1])){
+        alert("No Winer");
         console.log;
     }
 });
