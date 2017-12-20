@@ -60,66 +60,73 @@ $("#shoot").click(function(){
     computerChoice = choice[AInoo];
     userChoice = $("#input").val();
     
-    
-    if (userChoice === "rock"){
-        $(".me").attr("src","https://render.fineartamerica.com/images/rendered/medium/greeting-card/images-medium-5/fist-made-of-rock-anthony-doudt.jpg");
-    }
-    else if (userChoice === "scissors"){
-        $(".me").attr("src","https://previews.123rf.com/images/denisnata/denisnata1209/denisnata120900373/15334412-Woman-hand-with-scissors-isolated-on-white-background-Stock-Photo.jpg");
-    }
-    else if (userChoice === "paper"){
-        $(".me").attr("src","https://i.ytimg.com/vi/Zr2S9rrAHbY/maxresdefault.jpg");
-    }
+   
+   if ((userChoice !== "rock") && (userChoice !== "paper") && (userChoice !== "scissors")){
+       
+       alert("not valid");
+   } 
+   else if((userChoice === "rock") || (userChoice === "paper") || (userChoice === "scissors")){
+       
+            if (userChoice === "rock"){
+                $(".me").attr("src","https://render.fineartamerica.com/images/rendered/medium/greeting-card/images-medium-5/fist-made-of-rock-anthony-doudt.jpg");
+            }
+            else if (userChoice === "scissors"){
+                $(".me").attr("src","https://previews.123rf.com/images/denisnata/denisnata1209/denisnata120900373/15334412-Woman-hand-with-scissors-isolated-on-white-background-Stock-Photo.jpg");
+            }
+            else if (userChoice === "paper"){
+                $(".me").attr("src","https://i.ytimg.com/vi/Zr2S9rrAHbY/maxresdefault.jpg");
+            }
 
 
 
 
-    if (computerChoice === choice[0]){
-        $(".ai").attr("src","https://render.fineartamerica.com/images/rendered/medium/greeting-card/images-medium-5/fist-made-of-rock-anthony-doudt.jpg");
-    }
-    else if (computerChoice === choice[1]){
-        $(".ai").attr("src","https://previews.123rf.com/images/denisnata/denisnata1209/denisnata120900373/15334412-Woman-hand-with-scissors-isolated-on-white-background-Stock-Photo.jpg");
-    }
-    else if (computerChoice === choice[2]){
-        $(".ai").attr("src","https://i.ytimg.com/vi/Zr2S9rrAHbY/maxresdefault.jpg");
-    }
+            if (computerChoice === choice[0]){
+                $(".ai").attr("src","https://render.fineartamerica.com/images/rendered/medium/greeting-card/images-medium-5/fist-made-of-rock-anthony-doudt.jpg");
+            }
+            else if (computerChoice === choice[1]){
+                $(".ai").attr("src","https://previews.123rf.com/images/denisnata/denisnata1209/denisnata120900373/15334412-Woman-hand-with-scissors-isolated-on-white-background-Stock-Photo.jpg");
+            }
+            else if (computerChoice === choice[2]){
+                $(".ai").attr("src","https://i.ytimg.com/vi/Zr2S9rrAHbY/maxresdefault.jpg");
+            }
     
     
     
-    if ((userChoice === "rock") && (computerChoice === choice[0])){
-        alert("No Winer");
-        console.log;
-    }
-    else if ((userChoice === "rock") && (computerChoice === choice[1])){
-        alert("You win");
-        console.log;
-    }
-    else if ((userChoice === "rock") && (computerChoice === choice[2])){
-        alert("You lost");
-        console.log;
-    }
-    else if((userChoice === "paper") && (computerChoice === choice[0])){
-        alert("You win");
-        console.log;
-    }
-    else if ((userChoice === "paper") && (computerChoice === choice[2])){
-        alert("No Winer");
-        console.log;
-    }
-    else if((userChoice === "paper") && (computerChoice === choice[1])){
-        alert("You lost");
-        console.log;
-    }else if ((userChoice === "scissors") && (computerChoice === choice[0])){
-        alert("You lost");
-        console.log;
-    }else if ((userChoice === "scissors") && (computerChoice === choice[2])){
-        alert("You win");
-        console.log;
-    }
-    else if ((userChoice === "scissors") && (computerChoice === choice[1])){
-        alert("No Winer");
-        console.log;
-    }
+            if ((userChoice === "rock") && (computerChoice === choice[0])){
+                alert("No Winer");
+                console.log;
+            }
+            else if ((userChoice === "rock") && (computerChoice === choice[1])){
+                alert("You win");
+                console.log;
+            }
+            else if ((userChoice === "rock") && (computerChoice === choice[2])){
+                alert("You lost");
+                console.log;
+            }
+            else if((userChoice === "paper") && (computerChoice === choice[0])){
+                alert("You win");
+                console.log;
+            }
+            else if ((userChoice === "paper") && (computerChoice === choice[2])){
+                alert("No Winer");
+                console.log;
+            }
+            else if((userChoice === "paper") && (computerChoice === choice[1])){
+                alert("You lost");
+                console.log;
+            }else if ((userChoice === "scissors") && (computerChoice === choice[0])){
+                alert("You lost");
+                console.log;
+            }else if ((userChoice === "scissors") && (computerChoice === choice[2])){
+                alert("You win");
+                console.log;
+            }
+            else if ((userChoice === "scissors") && (computerChoice === choice[1])){
+                alert("No Winer");
+                console.log;
+            }
+   }
 });
 
 
