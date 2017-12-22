@@ -54,7 +54,7 @@ $("#shoot").click(function(){
     $("#mechoice").html($("#input").val());
 });
 
-$("#shoot").click(function(){
+     $("#shoot").click(function(){
     
     var AInoo = Math.floor((Math.random()*choice.length));
     computerChoice = choice[AInoo];
@@ -98,10 +98,12 @@ $("#shoot").click(function(){
             }
             else if ((userChoice === "rock") && (computerChoice === choice[1])){
                 alert("You win");
+                $("#Scome").append(+1);
                 console.log;
             }
             else if ((userChoice === "rock") && (computerChoice === choice[2])){
                 alert("You lost");
+                $("#Scoai").append(+1);
                 console.log;
             }
             else if((userChoice === "paper") && (computerChoice === choice[0])){
