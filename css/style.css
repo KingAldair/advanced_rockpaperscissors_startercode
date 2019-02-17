@@ -5,13 +5,12 @@
     height:200px;
 }
 #sco1{
-    border:10px;
-    border-color: black;
+    height:blue;
+    background-color: blue;
 }
 #sco2{
-    border:10px;
-    border-color: black;
-    
+    height:200px;
+    background-color: red;
 }
 .ai{
     height:200px 
