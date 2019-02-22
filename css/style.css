@@ -5,11 +5,13 @@
     height:200px;
 }
 #sco1{
-    height:blue;
+    height:200px;
     background-color: blue;
+    font-size: 80px;
 }
 #sco2{
     height:200px;
+    font-size: 80px;
     background-color: red;
 }
 .ai{

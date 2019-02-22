@@ -89,8 +89,8 @@ $("#shoot").click(function(){
             else if (computerChoice === choice[2]){
                 $(".ai").attr("src","https://i.ytimg.com/vi/Zr2S9rrAHbY/maxresdefault.jpg");
             }
-    
-    
+            var mys=$("#sco1").text();
+            var ais=$("#sco2").text();
     
             if ((userChoice === "rock") && (computerChoice === choice[0])){
                 alert("No Winer");
@@ -98,16 +98,17 @@ $("#shoot").click(function(){
             }
             else if ((userChoice === "rock") && (computerChoice === choice[1])){
                 alert("You win");
-                $("#Scome").append(+1);
+                $("#sco1").html(mys +++ 1);
                 console.log;
             }
             else if ((userChoice === "rock") && (computerChoice === choice[2])){
                 alert("You lost");
-                $("#Scoai").append(+1);
+                $("#sco2").html(ais +++ 1);
                 console.log;
             }
             else if((userChoice === "paper") && (computerChoice === choice[0])){
                 alert("You win");
+                $("#sco1").html(mys +++ 1);
                 console.log;
             }
             else if ((userChoice === "paper") && (computerChoice === choice[2])){
@@ -116,12 +117,15 @@ $("#shoot").click(function(){
             }
             else if((userChoice === "paper") && (computerChoice === choice[1])){
                 alert("You lost");
+                $("#sco2").html(ais +++ 1);
                 console.log;
             }else if ((userChoice === "scissors") && (computerChoice === choice[0])){
                 alert("You lost");
+                $("#sco2").html(ais +++ 1);
                 console.log;
             }else if ((userChoice === "scissors") && (computerChoice === choice[2])){
                 alert("You win");
+                $("#sco1").html(mys +++ 1);
                 console.log;
             }
             else if ((userChoice === "scissors") && (computerChoice === choice[1])){
